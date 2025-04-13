@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- tells the browser this is an HTML5 doc -->
+
+<html lang="en">
+<!-- whole page is in English -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <!-- makes sure all characters show up correctly -->
+
+    <title>Team Meeting Minutes</title>
+    <!-- what shows up in the browser tab -->
+
+    <meta name="description" content="Lab 2 meeting notes" />
+    <!-- quick description of the page (used by search engines etc) -->
+
+    <link rel="icon" href="favicon.ico" />
+    <!-- this adds a little icon to the browser tab (if you have one) -->
+  </head>
+
+  <body>
+    <header>
+      <!-- top of the page with the main title + context -->
+      <h1>Pomodoro Timer First Brainstorm</h1>
+      <h2>Topic: Brainstorming</h2>
+      <h3>Date: April 13, 2025</h3>
+    </header>
+
+    <main>
+      <!-- main content of the webpage -->
+      
+      <section>
+        <!-- who's here -->
+        <h2>Attendance</h2>
+        <ul>
+          <li>Lavin</li>
+          <li>Sara</li>
+          <li>Rohan</li>
+        </ul>
+      </section>
+
+      <section>
+        <!-- what we plan to do -->
+        <h2>Agenda</h2>
+        <ol>
+          <li>Last meeting recap</li>
+          <li>Brainstorm</li>
+          <li>Assign tasks</li>
+        </ol>
+      </section>
+
+      <section>
+        <!-- stuff we still need to finish -->
+        <h2>Unfinished Business</h2>
+        <p>Get current task updates.  </p>
+      </section>
+
+      <section>
+        <!-- new stuff to talk about -->
+        <h2>New Business</h2>
+        <p>We discussed next plans and what new features we want to focus on.</p>
+      </section>
+
+      <section>
+        <!-- random notes/questions -->
+        <h2>Miscellaneous</h2>
+        <p>Next meeting will take place Tuesday.</p>
+      </section>
+
+      <section>
+        <!-- image of diagram we made (can be fake) -->
+        <h2>Diagram</h2>
+        <img src="screenshots/diagram.png" alt="Meeting diagram" />
+      </section>
+
+      <section>
+        <!-- audio recording of the meeting -->
+        <h2>Audio Recording</h2>
+        <audio controls>
+          <source src="assets/audio.mp3" type="audio/mp3" />
+        </audio>
+      </section>
+
+      <section>
+        <!-- video recording of the meeting -->
+        <h2>Video Recording</h2>
+        <video controls width="300">
+          <source src="assets/video.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section>
+        <!-- collapsible extra notes -->
+        <details>
+          <summary>Click for extra notes</summary>
+          <p>We may want to add a pause feature later.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <!-- bottom of the page -->
+
+      <hr />
+      <!-- horizontal line to separate footer -->
+
+      <form>
+        <!-- form section (required even if not super useful here) -->
+        <fieldset>
+          <legend>Feedback</legend>
+
+          <!-- basic text input -->
+          <label>Your name:
+            <input type="text" />
+          </label><br />
+
+          <!-- date input -->
+          <label>Meeting date:
+            <input type="date" />
+          </label><br />
+
+          <!-- checkbox input -->
+          <label><input type="checkbox" /> Finished reading meeting minutes</label><br />
+
+          <!-- radio buttons -->
+          <label><input type="radio" name="rating" /> 👍</label>
+          <label><input type="radio" name="rating" /> 👎</label><br />
+
+          <!-- large text box -->
+          <label>Suggestions:
+            <textarea></textarea>
+          </label><br />
+
+          <!-- datalist input (replaces select) -->
+           <label for="feature-choice">Pick a feature:</label>
+           <input list="features" id="feature-choice" name="feature-choice" /><br />
+           <datalist id="features">
+            <option value="Light Mode" />
+            <option value="Dark Mode" />
+        </datalist>
+
+
+          <!-- button to "submit" -->
+          <button type="submit">Send</button>
+        </fieldset>
+      </form>
+
+      <span>© 2025</span>
+    </footer>
+  </body>
+</html>
