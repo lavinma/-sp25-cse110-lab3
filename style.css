@@ -1,12 +1,43 @@
+/*  Global styles applied to the whole page */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;   /* a custom Google Font */
+    background-color: pink;               /* background color is pink */
+    color: white;                         /* text color is white */
+    text-align: center;                   /* text is centered (horizontally) */
   }
   
-
-body {
-    background-color: pink;
-    color: white;
-    font-family: sans-serif;
-    text-align: center;
+  /* Main header styling */
+  h1 {
+    font-size: 2rem;                      /* Relative unit for font size */
+    padding-top: 10px;                    /* Absolute unit padding */
+    margin-left: 5%;                      /* spacing unit */
+  }
+  
+  /* Unordered list styling */
+  ul {
+    padding: 1em;                         /* inner spacing */
+    border-width: 2px;                    /* border thickness */
+  }
+  
+  /* Image styling (e.g., meeting diagram) */
+  img {
+    max-width: 80vw;                      
+    height: 5cm;                          
+  }
+  
+  /* Media query (applies only on screens 600px or smaller) */
+  @media (max-width: 600px) {
+    body {
+      background-color: hotpink;         /* background color gets changed to hot pink */
+      font-size: 14px;                   /* smaller font size for readability */
+    }
+  
+    h1 {
+      font-size: 20px;                   /* heading size is different for phones */
+    }
+  
+    ul {
+      flex-direction: column;            /* list items stack vertically */
+    }
   }
   
