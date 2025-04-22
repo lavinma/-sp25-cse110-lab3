@@ -15,9 +15,14 @@ body {
   
   /* Unordered list styling */
   ul {
-    padding: 1em;                         /* inner spacing */
-    border-width: 2px;                    /* border thickness */
+    display: flex;                        /* turns list into flex row */
+    justify-content: space-around;       /* spaces out list items evenly */
+    align-items: center;                 /* centers vertically */
+    gap: 1rem;                            /* the space between items */
+    padding: 1em;
+    list-style: none;                   
   }
+  
   
   /* Image styling (e.g., meeting diagram) */
   img {
