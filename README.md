@@ -1,2 +1,3 @@
-# Lab 2 - Starter
-**Live Site:** [https://lavinma.github.io/Lab2_Starter/](https://lavinma.github.io/Lab2_Starter/)
+# Lab 3 - CSE 110
+
+GitHub Pages: https://lavinma.github.io/sp25-cse110-lab3
