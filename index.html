@@ -4,6 +4,14 @@
 <html lang="en">
 <!-- whole page is in English -->
 
+
+  <style>
+    summary {
+      color: darkred;
+      font-weight: bold;
+    }
+  </style>
+  
   <head>
     <meta charset="UTF-8" />
     <!-- makes sure all characters show up correctly -->
@@ -18,11 +26,6 @@
     <!-- this adds a little icon to the browser tab (if you have one) -->
 
 
-    <!--for lab 3 -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-
   </head>
 
   <body>
@@ -35,7 +38,7 @@
 
     <main>
       <!-- main content of the webpage -->
-      
+
       <section>
         <!-- who's here -->
         <h2>Attendance</h2>
@@ -69,16 +72,26 @@
       </section>
 
       <section>
-        <!-- random notes/questions -->
-        <h2>Miscellaneous</h2>
-        <p>Next meeting will take place Tuesday.</p>
+        <!-- inline CSS -->
+        <h2 style="color: navy;">Miscellaneous</h2>
+        <p style="text-align: center;">Next meeting will take place Tuesday.</p>
+      </section>
+
+      <section>
+        <h2>TODO</h2>
+        <section class="grid-layout">
+          <div>1: Complete Lab 3</div>
+          <div>2: Coordinate with team</div>
+          <div>3: Set up meeting times</div>
+          <div>4: Go to class!</div>
+        </section>
       </section>
 
       <section>
         <h2>Diagram</h2>
         <img src="screenshots/CSE110Lab2Pic.png" alt="Whiteboard diagram from meeting" />
       </section>
-      
+
       <section>
         <h2>Audio Recording</h2>
         <audio controls>
@@ -98,6 +111,13 @@
         <details>
           <summary>Click for extra notes</summary>
         </details>
+      </section>
+
+      <section>
+        <h2>Display Test for Lab 3</h2>
+        <p class="hidden-paragraph">You shouldn't see this text.</p>
+        <span class="inline-box">Hi.</span>
+        <span class="inline-box">Hi again</span>
       </section>
     </main>
 
@@ -135,13 +155,12 @@
           </label><br />
 
           <!-- datalist input (replaces select) -->
-           <label for="feature-choice">Mode:</label>
-           <input list="features" id="feature-choice" name="feature-choice" /><br />
-           <datalist id="features">
+          <label for="feature-choice">Mode:</label>
+          <input list="features" id="feature-choice" name="feature-choice" /><br />
+          <datalist id="features">
             <option value="Light Mode"></option>
             <option value="Dark Mode"></option>
-        </datalist>
-
+          </datalist>
 
           <!-- button to "submit" -->
           <button type="submit">Done</button>
